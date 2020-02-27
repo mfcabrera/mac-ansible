@@ -1,47 +1,48 @@
-[user]
-    name = Adam Johnson
-    email = me@adamj.eu
-
-[core]
-    excludesfile = ~/.gitignore_global
-
-[credential]
-    helper = cache --timeout=3600
-
-[interactive]
-    singlekey = true
-
 [color]
-    ui = auto
-
+	branch = auto
+	diff = auto
+	status = auto
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
-
+	current = yellow reverse
+	local = yellow
+	remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
-
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 
-[push]
-    default = upstream
-    followTags = true
 
-[merge]
-    conflictstyle = diff3
 
 [alias]
+    # one-line log
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+    a = add
+    ap = add -p
+    c = commit --verbose
+    ca = commit -a --verbose
+    cm = commit -m
+    cam = commit -a -m
+    m = commit --amend --verbose
+
     d = diff
-    s = status
-    st = stash
+    ds = diff --stat
+    dc = diff --cached
+
+    s = status -s
     co = checkout
+    cob = checkout -b
+    # list branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
+
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     ign = ls-files -o -i --exclude-standard
@@ -52,6 +53,23 @@
     new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
     ffmerge = merge --ff-only
 
+[user]
+	name = Miguel Cabrera
+	email = mcabrera@newyorker.de
+
+[core]
+    excludesfile = ~/.gitignore_global
+
+[credential]
+    helper = cache --timeout=3600
+
+[interactive]
+    singlekey = true
+
+
+[merge]
+    conflictstyle = diff3
+   
 [hub]
     protocol = ssh
 [diff]
