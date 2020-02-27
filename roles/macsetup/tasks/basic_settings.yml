@@ -23,4 +23,4 @@
     dest: ~/.ssh/known_hosts
     create: true
     mode: 0644
-    insertafter: EOF
+    block: "{{ lookup('file', 'other_hosts') }}"
