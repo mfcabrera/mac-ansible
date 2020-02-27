@@ -17,3 +17,10 @@
     state: present
     line: "{{ lookup('file', 'github_ssh_host_key') }}"
     regexp: "^github\\.com "
+
+- name: Extra hosts
+  blockinfile:
+    dest: ~/.ssh/known_hosts
+    create: true
+    mode: 0644
+    insertafter: EOF

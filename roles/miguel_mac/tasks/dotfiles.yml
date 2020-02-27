@@ -3,17 +3,15 @@
     path: '~/.{{ item }}'
     state: directory
   loop:
-  - innotop
   - ipython
   - ipython/profile_default
   - ipython/profile_default/startup
   - config
   - config/karabiner
-  - config/yamllint
 
 - name: dotfiles files
   file:
-    src: '{{ ansible_env.PWD }}/roles/adam_mac/files/dotfiles/{{ item }}'
+    src: '{{ ansible_env.PWD }}/roles/macsetup/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
     state: link
   loop:
