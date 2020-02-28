@@ -1,9 +1,7 @@
 mac-ansible
 ===========
 
-I use this project to configure my macOS the way I like it. That way I can wipe
-and re-install with less effort. See my
-[blog post](https://adamj.eu/tech/2019/03/20/how-i-provision-my-macbook-with-ansible/).
+Simple Ansible role to setup a Mac from scratch. Adapted from https://github.com/adamchainz/mac-ansible
 
 Getting Started
 ---------------
@@ -18,8 +16,6 @@ Getting Started
 5. `pip install ansible` (always the best way to install Ansible)
 6. Then `./playbook.yml`
 
-Fork! Copy! Adapt!
+Copy! Adapt!
 ------------------
-
-This is distributed under the Unlicense so you can do whatever you want with
-it, see LICENSE.
+I recommend to copy this repo and adapt it to the particular needs.
