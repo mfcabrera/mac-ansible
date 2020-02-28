@@ -19,7 +19,7 @@ Thumbs.db
 .pycache
 .python-version
 .tox
-
+.mypy_cache
 
 # Sublime stuff #
 #################
