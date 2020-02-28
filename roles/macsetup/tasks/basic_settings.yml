@@ -1,4 +1,4 @@
-- name: ssh dir stat
+goog\- name: ssh dir stat
   stat:
     path: ~/.ssh
   register: ssh_dir
