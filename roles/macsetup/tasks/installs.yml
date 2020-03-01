@@ -38,3 +38,8 @@
 
 - name: homebrew cleanup
   command: brew cleanup
+
+- name: Install powerline fonts
+  shell: "git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh && cd .. && rm -fr fonts"
+  tags:
+    - fonts
