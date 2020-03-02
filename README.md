@@ -15,6 +15,10 @@ Getting Started
 6. `pip install ansible` (always the best way to install Ansible)
 7. Then `./playbook.yml`
 
+Structure
+----------
+This is just a single ansible role. It installs software using brew/brew casks and links configuiration files to the standard location so it can be source controlled. Most of the tasks have one or more tags so it can be run individually if needed.
+
 Copy! Adapt!
 ------------------
 I recommend to copy this repo and adapt it to the particular needs.
