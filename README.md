@@ -18,6 +18,8 @@ Getting Started
 Structure
 ----------
 This is just a single ansible role. It installs software using brew/brew casks and links configuiration files to the standard location so it can be source controlled. Most of the tasks have one or more tags so it can be run individually if needed.
+You can see the list of installed apps by looking at [main.yml](roles/macsetup/vars/main.yml).
+
 
 Copy! Adapt!
 ------------------
