@@ -67,6 +67,7 @@ plugins=(
     fzf
     pip
     zsh-autosuggestions
+    kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -127,4 +128,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
