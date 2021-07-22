@@ -128,3 +128,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+export LANG=en_US.UTF-8
