@@ -9,17 +9,8 @@ Host github.com
   Hostname ssh.github.com
   Port 443
 
-Host scloudera01
-    HostName scloudera01.emea.company.newyorker.de
-    
-Host edge
-     HostName scedge01
-
 Host newblog
      HostName 178.62.212.93
      Port 3434
      User mfcabrera
 
-Host smesosphere04
-    HostName smesosphere04.emea.company.newyorker.de
-    User mcabrera
