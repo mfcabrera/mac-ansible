@@ -6,16 +6,10 @@ alias less='less -FSRXc'                    # Preferred 'less' implementation
 alias l='ls -G'
 
 # Personal
-alias mountssh='sshfs mcabrera@scloudera01.emea.company.newyorker.de:/home/mcabrera  -o allow_other,defer_permissions,IdentityFile=~/.ssh/id_rsa /Users/mcabrera/sclouder01mount/'
-alias umountssh='umount sclouder01mount'
-alias sshclou='ssh scloudera01'
-alias jsshfwd='ssh -CL 8801:localhost:8801 scloudera01   -N'
-alias jsshfwda="autossh -M 0 -N  -L  localhost:8801:localhost:8801 scloudera01.emea.company.newyorker.de"
 
 export PATH=$HOME/bin:$PATH
 
 # alias emacsclient=ec
-
 
 # For locally running the notebooks
 # export JAVA_HOME=`/usr/libexec/java_home`
