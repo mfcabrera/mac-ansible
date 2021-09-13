@@ -3,30 +3,63 @@ homebrew_taps: []
 homebrew_package_removals: []
 
 homebrew_packages:
+- apache-spark
 - aspell
+- autoconf-archive
 - autojump
 - autossh
 - bash
+- bash-completion
+- bash-git-prompt
 - cabextract
 - coreutils
+- ctags
 - ffmpeg
 - fzf
 - git
+- git-lfs
+- gobject-introspection
+- gopass
 - graphviz
+- gtk-doc
 - htop
+- hub
+- iperf
 - jq
 - jsonlint
 - libomp
 - lsyncd
+- lua@5.1
+- luarocks
+- markdown
 - mdcat
 - mosh
+- ncftp
+- postgresql
 - ripgrep
 - rsync
+- sbt
+- scala
+- the_silver_searcher
+- thefuck
 - tmux
 - tree
+- unoconv
 - wget
 - youtube-dl
+- autoconf
+- cloc
+- coreutils
+- cowsay
+- fdupes
+- ffmpeg
+- freetype
+- fswatch
+- git
 - imagemagick
+- inetutils
+- jhead
+- jpeg
 - jpegoptim
 - lesspipe
 - libevent
@@ -40,16 +73,20 @@ homebrew_packages:
 - zlib
 - zsh
 - zsh-completions
-
-
+- zsh-autosuggestions
+- gopass
 
 
 homebrew_cask_packages:
 - alfred
+- anaconda
 - anki
+- dash
 - disk-inventory-x
 - dropbox
 - docker
+- evernote
+- firefox
 - font-roboto-mono
 - font-ubuntumono-nerd-font
 - franz
@@ -60,11 +97,14 @@ homebrew_cask_packages:
 - karabiner-elements
 - keyboard-maestro
 - mactex
+- miro-formerly-realtimeboard
+- rescuetime
+- skim
 - skype
-- rectangle
+- spectacle
 - vlc
 - amazon-photos
-- emacs-plus
+- emacs
 - clipy
 - spotify
 - notion
