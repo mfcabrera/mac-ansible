@@ -55,7 +55,7 @@
 
 [user]
 	name = Miguel Cabrera
-	email = mcabrera@newyorker.de
+	email = mfcabrera@gmail.com
 
 [core]
     excludesfile = ~/.gitignore_global
