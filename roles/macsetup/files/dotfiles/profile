@@ -14,11 +14,11 @@ alias jsshfwda="autossh -M 0 -N  -L  localhost:8801:localhost:8801 scloudera01.e
 
 export PATH=$HOME/bin:$PATH
 
-alias emacsclient=ec
+# alias emacsclient=ec
 
 
 # For locally running the notebooks
-export JAVA_HOME=`/usr/libexec/java_home`
+# export JAVA_HOME=`/usr/libexec/java_home`
 # export SPARK_HOME=/usr/local/Cellar/apache-spark/2.3.1/
 
 # Sync personal work with  the hd backup

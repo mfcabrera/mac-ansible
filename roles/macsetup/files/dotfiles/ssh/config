@@ -14,3 +14,6 @@ Host newblog
      Port 3434
      User mfcabrera
 
+Host bururake
+     HostName bururakex.speedport.ip
+     User mfcabrera
